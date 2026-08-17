@@ -109,6 +109,18 @@ app.post('/api/contact', async (req, res) => {
   }
 });
 
+// 6. GET ROUTE TO VIEW ALL LEADS (Admin use)
+app.get('/api/leads', async (req, res) => {
+  try {
+    // .find() fetches everything in the database, .sort() puts the newest ones at the top!
+    const leads = await Contact.find().sort({ createdAt: -1 });
+    res.status(200).json(leads);
+  } catch (error) {
+    console.error("Error fetching leads:", error);
+    res.status(500).json({ error: "Failed to fetch leads" });
+  }
+})
+
 // POST ROUTE FOR BOOKING A TEST DRIVE
 app.post('/api/test-drive', async (req, res) => {
   try {
