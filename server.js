@@ -36,19 +36,34 @@ app.get('/api/cars/:modelCd', (req, res) => {
   res.json(car);
 });
 
-// 3. POST CONTACT US INQUIRY (NEW API!)
+// 3. POST CONTACT US & LEADS INQUIRY
 const inquiries = []; // Temporary memory storage
+
 app.post('/api/contact', (req, res) => {
-  const { name, email, message } = req.body;
+  // Destructure all possible fields (email from Contact page, mobile/city/car from Detail page)
+  const { name, email, mobile, city, car, message } = req.body;
   
-  if (!name || !email || !message) {
-    return res.status(400).json({ error: "All fields are required" });
+  if (!name) {
+    return res.status(400).json({ error: "Name is required" });
   }
 
-  const newInquiry = { id: Date.now(), name, email, message, date: new Date() };
+  const newInquiry = { 
+    id: Date.now(), 
+    name, 
+    email: email || "N/A", 
+    mobile: mobile || "N/A",
+    city: city || "N/A",
+    car: car || "N/A",
+    message: message || "No message provided",
+    date: new Date().toLocaleString()
+  };
+  
   inquiries.push(newInquiry);
   
-  console.log("📩 New Message Received:", newInquiry);
+  console.log("\n📩 NEW INQUIRY RECEIVED!");
+  console.log(newInquiry);
+  console.log("--------------------------");
+  
   res.status(201).json({ success: true, message: "We have received your message!" });
 });
 
