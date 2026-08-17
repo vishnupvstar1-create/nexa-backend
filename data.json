@@ -1,0 +1,249 @@
+[
+  {
+    "modelCd": "BZ",
+    "minBaasPrice": null,
+    "minEvBatteryPerKmFee": null,
+    "model_code": "150019",
+    "carImage": {
+      "_publishUrl": "https://prod-nexa.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/cars/baleno/images/front-tilted-view/Suzuki_Baleno_3-4th-(Co-Dr)--Low-Angle_left_CMYK_latest-(1).png"
+    },
+    "carLogoImage": {
+      "_publishUrl": "https://prod-nexa.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/logo/cars/manual-brochure-car-logos/New%20black%20baleno%20logo.svg"
+    },
+    "brochure": {
+      "_publishUrl": "https://prod-nexa.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/cars/baleno/documents/NEXA-Baleno-Brochure.pdf"
+    },
+    "bodyType": "Hatchback",
+    "bodyTypeSegregate": "Hatchback",
+    "modelDesc": "Baleno",
+    "altText": "Baleno",
+    "exShowroomPrice": 666007,
+    "fuelType": ["Petrol", "CNG"],
+    "technology": ["S-CNG", "Petrol"],
+    "transmissionType": ["Manual", "Automatic"],
+    "modelOverview": "Be bold with the New Age Baleno. Experience sensorial driving with the perfect blend of bold design, new age tech and sophistication.",
+    "maxFuelEfficiency": " 22.94 km/l*",
+    "maxPower": "66 kW@6000 rpm",
+    "maxDisplacement": "1197 cc",
+    "suzukiConnectEnabled": true,
+    "variants": [
+      {
+        "variantCd": "BZR4LL1",
+        "variantDesc": "BALENO SIGMA 1.2L ISS 5MT",
+        "variantTechnology": ["Petrol"]
+      },
+      {
+        "variantCd": "BZR4LV1",
+        "variantDesc": "BALENO DELTA 1.2L ISS 5MT",
+        "variantTechnology": ["Petrol"]
+      }
+    ]
+  },
+  {
+    "modelCd": "VE",
+    "minBaasPrice": "10.99",
+    "minEvBatteryPerKmFee": "3.99",
+    "model_code": "150121",
+    "carImage": {
+      "_publishUrl": "https://prod-nexa.marutisuzuki.com/content/dam/msil/ev/in/en/assets/cars/e-vitara/images/front-tilted-view/NEXA_Evitara.png"
+    },
+    "carLogoImage": {
+      "_publishUrl": "https://prod-nexa.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/logo/cars/manual-brochure-car-logos/Static-04%20(1)%20-%20om.svg"
+    },
+    "brochure": {
+      "_publishUrl": "https://prod-nexa.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/cars/evitara/documents/e_VITARA_Brochure.pdf"
+    },
+    "bodyType": "MUV/SUV",
+    "bodyTypeSegregate": "SUV",
+    "modelDesc": "e VITARA",
+    "altText": "e VITARA",
+    "exShowroomPrice": 1100000,
+    "fuelType": ["Electric"],
+    "technology": ["Electric"],
+    "transmissionType": ["Automatic"],
+    "modelOverview": "Experience the thrill of an SUV and the tech of an EV with the tough and sophisticated e VITARA. It’s built for your adventures, wherever they may take you.",
+    "suzukiConnectEnabled": true,
+    "variants": [
+      {
+        "variantCd": "VEAEAZ2",
+        "variantDesc": "e VITARA ALPHA",
+        "variantTechnology": ["Electrified"]
+      },
+      {
+        "variantCd": "VEAEAZ1",
+        "variantDesc": "e VITARA ZETA",
+        "variantTechnology": ["Electrified"]
+      }
+    ]
+  },
+  {
+    "modelCd": "FR",
+    "model_code": "150107",
+    "carImage": {
+      "_publishUrl": "https://prod-nexa.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/cars/fronx/images/front-tilted-view/335x185.png"
+    },
+    "carLogoImage": {
+      "_publishUrl": "https://prod-nexa.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/logo/cars/manual-brochure-car-logos/Black%20fronx%20logo.svg"
+    },
+    "brochure": {
+      "_publishUrl": "https://prod-nexa.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/cars/fronx/documents/NEXA-Fronx-Brochure.pdf"
+    },
+    "bodyType": "MUV/SUV",
+    "bodyTypeSegregate": "SUV",
+    "modelDesc": "FRONX",
+    "altText": "Fronx",
+    "exShowroomPrice": 752000,
+    "fuelType": ["Petrol", "CNG"],
+    "technology": ["Smart Hybrid", "S-CNG", "Petrol"],
+    "transmissionType": ["Manual", "Automatic"],
+    "modelOverview": "Unleash the power and precision with the FRONX that comes with futuristic tech, signature style and ultimate comfort to elevate the thrill of driving.",
+    "maxFuelEfficiency": "22.89 km/l*",
+    "maxPower": "73.6 kW",
+    "maxDisplacement": "998 cc",
+    "suzukiConnectEnabled": true,
+    "variants": [
+      {
+        "variantCd": "FRR4IL1",
+        "variantDesc": "FRONX Sigma Petrol",
+        "variantTechnology": ["Petrol"]
+      },
+      {
+        "variantCd": "FRRCIL1",
+        "variantDesc": "FRONX Sigma CNG",
+        "variantTechnology": ["S-CNG"]
+      }
+    ]
+  },
+  {
+    "modelCd": "GV",
+    "model_code": "150078",
+    "carImage": {
+      "_publishUrl": "https://prod-nexa.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/cars/grand-vitara/sigma/images/front-tilted-view/Grand-Vitara-Header-Image.png"
+    },
+    "carLogoImage": {
+      "_publishUrl": "https://prod-nexa.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/logo/cars/manual-brochure-car-logos/Black%20gv%20logo.svg"
+    },
+    "brochure": {
+      "_publishUrl": "https://prod-nexa.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/cars/grand-vitara/sigma/documents/NEXA-Grand-Vitara-brochure.pdf"
+    },
+    "bodyType": "MUV/SUV",
+    "bodyTypeSegregate": "SUV",
+    "modelDesc": "Grand Vitara",
+    "altText": "Grand Vitara",
+    "exShowroomPrice": 1099000,
+    "fuelType": ["Petrol"],
+    "technology": ["Strong Hybrid", "S-CNG", "Petrol"],
+    "transmissionType": ["Manual", "Automatic"],
+    "modelOverview": "Rule the road with the Grand Vitara. Bold design, superior performance, stylish, and powerful; It is your perfect car for every adventure.",
+    "maxFuelEfficiency": "27.97 km/l*",
+    "maxPower": "68 kW @5500rpm*",
+    "maxDisplacement": "1490 cc",
+    "suzukiConnectEnabled": true,
+    "variants": [
+      {
+        "variantCd": "GVR4HL1",
+        "variantDesc": "GRAND VITARA SmtHybrid Sigma 1.5L 5MT",
+        "variantTechnology": ["Petrol"]
+      }
+    ]
+  },
+  {
+    "modelCd": "IN",
+    "model_code": "150109",
+    "carImage": {
+      "_publishUrl": "https://prod-nexa.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/cars/invicto/images/front-tilted-view/NEXA-Invicto-Front-left-3-4-shot-op-02-v3-6.png"
+    },
+    "carLogoImage": {
+      "_publishUrl": "https://prod-nexa.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/logo/cars/manual-brochure-car-logos/Black%20invicto%20logo.svg"
+    },
+    "brochure": {
+      "_publishUrl": "https://prod-nexa.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/cars/invicto/documents/NEXA-Invicto-Brochure.pdf"
+    },
+    "bodyType": "MUV/SUV",
+    "bodyTypeSegregate": "MPV",
+    "modelDesc": "Invicto",
+    "altText": "Invicto",
+    "exShowroomPrice": 2531000,
+    "fuelType": ["Petrol"],
+    "technology": ["Strong Hybrid"],
+    "transmissionType": ["Automatic"],
+    "modelOverview": "Welcome to the League of Extraordinary with Invicto. It’s more than just a car—it’s a statement of elegance, sophistication and true distinction.",
+    "maxFuelEfficiency": "22.16 km/l*",
+    "maxPower": "112 kW @ 6000 rpm",
+    "maxDisplacement": "1987 cc",
+    "suzukiConnectEnabled": true,
+    "variants": [
+      {
+        "variantCd": "INAHDZ1",
+        "variantDesc": "INVICTO ZETA+ eCVT 7S",
+        "variantTechnology": ["Strong Hybrid"]
+      }
+    ]
+  },
+  {
+    "modelCd": "JM",
+    "model_code": "150108",
+    "carImage": {
+      "_publishUrl": "https://prod-nexa.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/cars/jimny/images/front-tilted-view/jimny_header_image_front_tilted_view.png"
+    },
+    "carLogoImage": {
+      "_publishUrl": "https://prod-nexa.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/logo/cars/manual-brochure-car-logos/Black%20jimny%20logo.svg"
+    },
+    "brochure": {
+      "_publishUrl": "https://prod-nexa.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/cars/jimny/documents/NEXA-Jimny-Brochure.pdf"
+    },
+    "bodyType": "MUV/SUV",
+    "bodyTypeSegregate": "SUV",
+    "modelDesc": "Jimny",
+    "altText": "Jimny",
+    "exShowroomPrice": 1274000,
+    "fuelType": ["Petrol"],
+    "technology": ["Petrol"],
+    "transmissionType": ["Manual", "Automatic"],
+    "modelOverview": "Be limitless with the rich legacy of the Jimny. Drive with unmatched off-road performance, built for the adventure enthusiast in you to go further.",
+    "maxFuelEfficiency": "16.94 km/l*",
+    "maxPower": "77.1 kW @ 6000 rpm",
+    "maxDisplacement": "1462 cc",
+    "suzukiConnectEnabled": false,
+    "variants": [
+      {
+        "variantCd": "JMR4EZ1",
+        "variantDesc": "JIMNY ISS ZETA ALLGRIP PRO 1.5L 5MT",
+        "variantTechnology": ["Petrol"]
+      }
+    ]
+  },
+  {
+    "modelCd": "XL",
+    "model_code": "150005",
+    "carImage": {
+      "_publishUrl": "https://prod-nexa.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/cars/xl6/images/front-tilted-view/XL6-FrontTilted-335x185.png"
+    },
+    "carLogoImage": {
+      "_publishUrl": "https://prod-nexa.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/logo/cars/manual-brochure-car-logos/Black%20xl6%20logo.svg"
+    },
+    "brochure": {
+      "_publishUrl": "https://prod-nexa.marutisuzuki.com/content/dam/msil/nexa/in/en/assets/cars/xl6/Documents/NEXA-Xl6-Brochure.pdf"
+    },
+    "bodyType": "MUV/SUV",
+    "bodyTypeSegregate": "MPV",
+    "modelDesc": "XL6",
+    "altText": "XL6 ",
+    "exShowroomPrice": 1160999,
+    "fuelType": ["Petrol", "CNG"],
+    "technology": ["Smart Hybrid", "S-CNG"],
+    "transmissionType": ["Manual", "Automatic"],
+    "modelOverview": "Step into the world of luxury and pure indulgence with the XL6. A premium SUV crafted to blend modern design, intuitive technology and stellar performance.",
+    "maxFuelEfficiency": "20.90 km/l*",
+    "maxPower": "75.8 kW @ 6000",
+    "maxDisplacement": "1462 cc",
+    "suzukiConnectEnabled": true,
+    "variants": [
+      {
+        "variantCd": "XLR4GZ1",
+        "variantDesc": "XL6 Smart Hybrid ZETA 1.5L 5MT",
+        "variantTechnology": ["Smart Hybrid"]
+      }
+    ]
+  }
+]
