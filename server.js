@@ -4,6 +4,11 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url'; // <-- Add this
+
+// Bulletproof file path mapping for ES Modules on Linux servers
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // 1. LOAD ENVIRONMENT VARIABLES
 dotenv.config();
@@ -36,8 +41,8 @@ const Contact = mongoose.model('Contact', contactSchema);
 // 4. API ROUTES (Safely reading the JSON file)
 app.get('/api/cars', (req, res) => {
   try {
-    // This safely builds the exact file path regardless of the operating system
-    const filePath = path.join(process.cwd(), 'data', 'cars.json');
+    // Uses the exact directory of server.js to find the data folder
+    const filePath = path.join(__dirname, 'data', 'cars.json');
     const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
     res.json(data);
   } catch (error) {
@@ -48,7 +53,7 @@ app.get('/api/cars', (req, res) => {
 
 app.get('/api/cars/:modelCd', (req, res) => {
   try {
-    const filePath = path.join(process.cwd(), 'data', 'cars.json');
+    const filePath = path.join(__dirname, 'data', 'cars.json');
     const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
     const car = data.find(c => c.modelCd === req.params.modelCd);
     
