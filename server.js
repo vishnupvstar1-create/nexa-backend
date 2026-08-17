@@ -38,22 +38,21 @@ const contactSchema = new mongoose.Schema({
 // Create the model
 const Contact = mongoose.model('Contact', contactSchema);
 
-// 4. API ROUTES (Safely reading the JSON file)
+// 4. API ROUTES
 app.get('/api/cars', (req, res) => {
   try {
-    // Uses the exact directory of server.js to find the data folder
-    const filePath = path.join(__dirname, 'data', 'cars.json');
+    const filePath = path.join(__dirname, 'data.json');
     const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
     res.json(data);
   } catch (error) {
-    console.error("❌ Error reading cars file:", error.message);
+    console.error("❌ Error reading data.json:", error.message);
     res.status(500).json({ error: "Failed to load car data from server." });
   }
 });
 
 app.get('/api/cars/:modelCd', (req, res) => {
   try {
-    const filePath = path.join(__dirname, 'data', 'cars.json');
+    const filePath = path.join(__dirname, 'data.json');
     const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
     const car = data.find(c => c.modelCd === req.params.modelCd);
     
@@ -67,7 +66,6 @@ app.get('/api/cars/:modelCd', (req, res) => {
     res.status(500).json({ error: "Failed to load car details from server." });
   }
 });
-
 // 5. POST ROUTE TO SAVE TO DATABASE
 app.post('/api/contact', async (req, res) => {
   try {
