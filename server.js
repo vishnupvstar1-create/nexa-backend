@@ -3,6 +3,7 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import fs from 'fs';
+import path from 'path';
 
 // 1. LOAD ENVIRONMENT VARIABLES
 dotenv.config();
@@ -32,17 +33,34 @@ const contactSchema = new mongoose.Schema({
 // Create the model
 const Contact = mongoose.model('Contact', contactSchema);
 
-// 4. API ROUTES
+// 4. API ROUTES (Safely reading the JSON file)
 app.get('/api/cars', (req, res) => {
-  const data = JSON.parse(fs.readFileSync('./data/cars.json', 'utf8'));
-  res.json(data);
+  try {
+    // This safely builds the exact file path regardless of the operating system
+    const filePath = path.join(process.cwd(), 'data', 'cars.json');
+    const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    res.json(data);
+  } catch (error) {
+    console.error("❌ Error reading cars file:", error.message);
+    res.status(500).json({ error: "Failed to load car data from server." });
+  }
 });
 
 app.get('/api/cars/:modelCd', (req, res) => {
-  const data = JSON.parse(fs.readFileSync('./data/cars.json', 'utf8'));
-  const car = data.find(c => c.modelCd === req.params.modelCd);
-  if (car) res.json(car);
-  else res.status(404).json({ message: "Car not found" });
+  try {
+    const filePath = path.join(process.cwd(), 'data', 'cars.json');
+    const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    const car = data.find(c => c.modelCd === req.params.modelCd);
+    
+    if (car) {
+      res.json(car);
+    } else {
+      res.status(404).json({ message: "Car not found" });
+    }
+  } catch (error) {
+    console.error("❌ Error reading specific car:", error.message);
+    res.status(500).json({ error: "Failed to load car details from server." });
+  }
 });
 
 // 5. POST ROUTE TO SAVE TO DATABASE
