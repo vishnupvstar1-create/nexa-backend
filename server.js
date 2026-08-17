@@ -38,6 +38,18 @@ const contactSchema = new mongoose.Schema({
 // Create the model
 const Contact = mongoose.model('Contact', contactSchema);
 
+// DEFINE TEST DRIVE SCHEMA
+const testDriveSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  mobile: { type: String, required: true },
+  city: { type: String, required: true },
+  car: { type: String, required: true },
+  preferredDate: { type: String, required: true },
+  createdAt: { type: Date, default: Date.now }
+});
+
+const TestDrive = mongoose.model('TestDrive', testDriveSchema);
+
 // 4. API ROUTES
 app.get('/api/cars', (req, res) => {
   try {
@@ -94,6 +106,33 @@ app.post('/api/contact', async (req, res) => {
   } catch (error) {
     console.error("Database Error:", error);
     res.status(500).json({ error: "Failed to save inquiry to database" });
+  }
+});
+
+// POST ROUTE FOR BOOKING A TEST DRIVE
+app.post('/api/test-drive', async (req, res) => {
+  try {
+    const { name, mobile, city, car, preferredDate } = req.body;
+    
+    if (!name || !mobile || !car || !preferredDate) {
+      return res.status(400).json({ error: "Please fill in all required fields." });
+    }
+
+    const newBooking = new TestDrive({
+      name,
+      mobile,
+      city,
+      car,
+      preferredDate
+    });
+
+    await newBooking.save();
+    console.log("🚗 NEW TEST DRIVE BOOKED:", newBooking);
+    
+    res.status(201).json({ success: true, message: "Test Drive Confirmed!" });
+  } catch (error) {
+    console.error("Database Error:", error);
+    res.status(500).json({ error: "Failed to save test drive booking." });
   }
 });
 
